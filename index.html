@@ -11,11 +11,6 @@
 <body>
     <header>
         <section class="header-icons-container">
-            <div class="icons">
-                <a href="/css/font/logo.png"><span class="logo"></span></a>
-                <a href="/css/font/logo2.jpeg"><span class="logo2"></span></a>
-              
-            </div>
         </section>
         <nav>
             <section class="nav-logo-container">
@@ -29,8 +24,15 @@
     <main class="home-main">
         <section>
             <h1 class="home-main-text">Centro Avanzado <br> de Gestión de Tráfico</h1>
-            <a class="home-main-button" href="blogs.html">Busqueda de Eventos</a>
+            <button class="my-button" onclick="buscarEventos()">Búsqueda de Eventos</button>          
         </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+              <h2>Resultados de la Búsqueda</h2>
+              <ul id="event-list"></ul>
+            </div>
+        </div>
     </main>
+    <script src="main.js"></script>
 </body>
 </html>
